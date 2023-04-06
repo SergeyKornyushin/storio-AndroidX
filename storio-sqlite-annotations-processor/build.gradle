@@ -1,0 +1,12 @@
+apply plugin: 'kotlin'
+
+dependencies {
+    compile libraries.storIOSQLiteAnnotations
+    compile libraries.storIOCommonAnnotationsProcessor
+}
+
+sourceSets {
+    main.java.srcDirs += 'src/main/kotlin'
+}
+
+apply from: '../gradle/publish-java-lib.gradle'
